@@ -1,226 +1,361 @@
+/* line 1, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
   margin: auto;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 10, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+/* line 19, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .btn-main {
   color: #333;
-  background-color: #ffcb00; }
+  background-color: #ffcb00;
+}
+
+/* line 25, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .btn-light {
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+}
+
+/* line 31, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .btn-dark {
   color: #333;
-  background-color: #333; }
+  background-color: #333;
+}
 
+/* line 38, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: #ffcb00; }
+  background-color: #ffcb00;
+}
 
+/* line 46, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .bg-main {
   background: #ffcb00;
-  color: #fff; }
+  color: #fff;
+}
+
+/* line 51, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .bg-light {
   background: #f4f4f4;
-  color: #000; }
+  color: #000;
+}
+
+/* line 56, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .bg-dark {
   background: #333;
-  color: #fff; }
+  color: #fff;
+}
+
+/* line 61, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .bg-medium {
   background: #ccc;
-  color: #000; }
+  color: #000;
+}
 
+/* line 67, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .lead {
   font-size: 1.3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
+/* line 72, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 79, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .py-1 {
-  padding: 1rem 0rem; }
+  padding: 1rem 0rem;
+}
+
+/* line 83, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .py-2 {
-  padding: 2rem 0rem; }
+  padding: 2rem 0rem;
+}
+
+/* line 87, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .py-3 {
-  padding: 3rem 0rem; }
+  padding: 3rem 0rem;
+}
+
+/* line 91, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .py-4 {
-  padding: 4rem 0rem; }
+  padding: 4rem 0rem;
+}
 
+/* line 99, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .my-1 {
-  padding: 1rem 0rem; }
-.my-2 {
-  padding: 2rem 0rem; }
-.my-3 {
-  padding: 3rem 0rem; }
-.my-4 {
-  padding: 4rem 0rem; }
+  padding: 1rem 0rem;
+}
 
+/* line 103, D:/Traversy Courses/portfolio/scss/_utilities.scss */
+.my-2 {
+  padding: 2rem 0rem;
+}
+
+/* line 107, D:/Traversy Courses/portfolio/scss/_utilities.scss */
+.my-3 {
+  padding: 3rem 0rem;
+}
+
+/* line 111, D:/Traversy Courses/portfolio/scss/_utilities.scss */
+.my-4 {
+  padding: 4rem 0rem;
+}
+
+/* line 117, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .section-title {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
+/* line 127, D:/Traversy Courses/portfolio/scss/_utilities.scss */
 .bottom-line {
   height: 2px;
   width: 3rem;
   background: #ffcb00;
   display: block;
-  margin: 0 auto 1rem auto; }
+  margin: 0 auto 1rem auto;
+}
 
+/* line 4, D:/Traversy Courses/portfolio/scss/item_grid.scss */
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
 
+/* line 10, D:/Traversy Courses/portfolio/scss/item_grid.scss */
 .item {
   position: relative;
   background: #ffcb00;
   overflow: hidden;
-  cursor: pointer; }
-  .item:after {
-    content: '';
-    position: absolute;
-    display: block;
-    background: inherit;
-    opacity: 0.9;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
-    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); }
-  .item:hover:after {
-    transform: scale(2) translateX(0) translateY(0) rotate(-28deg); }
-  .item:hover .item-image {
-    transform: scale(1.2); }
-  .item:hover .item-text {
-    opacity: 1;
-    transform: translateY(0); }
-  .item-image {
-    height: auto;
-    display: block;
-    transform: translateZ(0);
-    transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); }
-  .item-image:before {
-    content: '';
-    display: block;
-    padding-top: 75%;
-    overflow: hidden; }
-  .item-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    line-height: 0; }
-  .item-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    text-align: center;
-    z-index: 1;
-    color: #fff;
-    transform: translateY(-20%);
-    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-    transition-delay: 300ms; }
-  .item-text-wrap {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%); }
-  .item-text-title {
-    font-size: 2rem;
-    padding: 0 1rem;
-    margin-top: 5px; }
-  .item-text-category {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    opacity: 0.7;
-    margin: 0; }
+  cursor: pointer;
+}
+
+/* line 16, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: inherit;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* line 31, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item:hover:after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
+/* line 36, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item:hover .item-image {
+  transform: scale(1.2);
+}
+
+/* line 41, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item:hover .item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 46, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-image {
+  height: auto;
+  display: block;
+  transform: translateZ(0);
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* line 53, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-image:before {
+  content: '';
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+/* line 60, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+/* line 69, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition-delay: 300ms;
+}
+
+/* line 85, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-text-wrap {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* line 93, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-text-title {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-top: 5px;
+}
+
+/* line 99, D:/Traversy Courses/portfolio/scss/item_grid.scss */
+.item-text-category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin: 0;
+}
 
 @media (max-width: 800px) {
+  /* line 3, D:/Traversy Courses/portfolio/scss/_media.scss */
   #header-home {
-    height: 30rem; }
-    #header-home .header-content {
-      padding-top: 5rem; } }
+    height: 30rem;
+  }
+  /* line 6, D:/Traversy Courses/portfolio/scss/_media.scss */
+  #header-home .header-content {
+    padding-top: 5rem;
+  }
+}
+
 @media (max-width: 500px) {
+  /* line 14, D:/Traversy Courses/portfolio/scss/_media.scss */
   #main-nav {
     flex-direction: column;
-    align-items: center; }
-    #main-nav li {
-      padding: 1rem; }
-
+    align-items: center;
+  }
+  /* line 18, D:/Traversy Courses/portfolio/scss/_media.scss */
+  #main-nav li {
+    padding: 1rem;
+  }
+  /* line 24, D:/Traversy Courses/portfolio/scss/_media.scss */
   #header-home {
     height: 10rem;
     border-bottom: 3px solid #ffcb00;
-    background-position: 20% 30%; }
-    #header-home .header-content {
-      display: none; }
+    background-position: 20% 30%;
+  }
+  /* line 29, D:/Traversy Courses/portfolio/scss/_media.scss */
+  #header-home .header-content {
+    display: none;
+  }
+  /* line 34, D:/Traversy Courses/portfolio/scss/_media.scss */
   #header-inner {
-    height: 10rem; }
-
+    height: 10rem;
+  }
+  /* line 40, D:/Traversy Courses/portfolio/scss/_media.scss */
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
   #contact-b .contact-info,
   .items {
-    grid-template-columns: 1fr; }
-
+    grid-template-columns: 1fr;
+  }
+  /* line 52, D:/Traversy Courses/portfolio/scss/_media.scss */
   #home-a .specials div {
     border-bottom: 1px #f4f4f4 solid;
-    padding-bottom: 1rem; }
-    #home-a .specials div:last-child {
-      border: none;
-      padding-bottom: 0; }
+    padding-bottom: 1rem;
+  }
+  /* line 56, D:/Traversy Courses/portfolio/scss/_media.scss */
+  #home-a .specials div:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  /* line 64, D:/Traversy Courses/portfolio/scss/_media.scss */
   #home-b .stats div {
-    padding: 2rem 0 1rem 0; }
-
+    padding: 2rem 0 1rem 0;
+  }
+  /* line 73, D:/Traversy Courses/portfolio/scss/_media.scss */
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3';
+  }
+  /* line 83, D:/Traversy Courses/portfolio/scss/_media.scss */
   #about-c {
-    display: none; }
-
+    display: none;
+  }
+  /* line 91, D:/Traversy Courses/portfolio/scss/_media.scss */
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
+  }
+  /* line 102, D:/Traversy Courses/portfolio/scss/_media.scss */
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px #555 solid; }
-    #contact-b div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0; }
+    border-bottom: 1px #555 solid;
+  }
+  /* line 107, D:/Traversy Courses/portfolio/scss/_media.scss */
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* line 116, D:/Traversy Courses/portfolio/scss/_media.scss */
   #contact-c h1 {
-    font-size: 2rem; }
-
+    font-size: 2rem;
+  }
+  /* line 123, D:/Traversy Courses/portfolio/scss/_media.scss */
   #main-footer {
-    height: 7rem; }
-    #main-footer .footer-content {
-      flex-direction: column;
-      padding: 1rem;
-      height: 5rem; } }
+    height: 7rem;
+  }
+  /* line 126, D:/Traversy Courses/portfolio/scss/_media.scss */
+  #main-footer .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+  }
+}
+
 @media (max-height: 580px) {
+  /* line 137, D:/Traversy Courses/portfolio/scss/_media.scss */
   #header-home .header-content {
-    padding-top: 3rem; } }
+    padding-top: 3rem;
+  }
+}
+
 @media (max-height: 330px) {
+  /* line 146, D:/Traversy Courses/portfolio/scss/_media.scss */
   #header-home .header-content h1 {
-    font-size: 2rem; } }
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=item_grid.css.map */
